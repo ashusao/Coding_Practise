@@ -1,0 +1,92 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: ashu
+ *
+ * Created on July 6, 2018, 2:06 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include "Array.h"
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    
+    Array* A = new Array();
+    if(A->insert(3, 0)){
+        cout << "Unitialized array Insert Successfull"<<endl;
+        A->print_array();
+    }
+    if(A->remove(0)){
+        cout << "Unitialized array Delete Successfull"<<endl;
+        A->print_array();
+    }
+    
+    delete A;
+    
+    Array* B = new Array(3);
+    if(B->remove(0)){
+        cout << "Empty Array Delete Successfull"<<endl;
+        B->print_array();
+    }
+    
+    if(B->insert(15,2)){
+        cout << "Insert at wrong pos Successfull"<<endl;
+        B->print_array();
+    }
+    
+    if(B->insert(10,1)){
+        cout << "Insert Successfull"<<endl;
+        B->print_array();
+    }
+    
+    if(B->insert(10,-2)){
+        cout << "Insert at -2 Successfull"<<endl;
+    }
+    
+    if(B->remove(3)){
+        cout << "Delete at incorrect pos Successfull"<<endl;
+        B->print_array();
+    }
+    
+    if(B->remove(1)){
+        cout << "Delete Successful"<<endl;
+        B->print_array();
+    }
+    
+    if(B->insert(10,1)){
+        cout << "Insert Successfull"<<endl;
+        B->print_array();
+    }
+    
+    if(B->insert(20,2)){
+        cout << "Insert Successfull"<<endl;
+        B->print_array();
+    }
+    
+    if(B->insert(30,5)){
+        cout << "Insert Successfull"<<endl;
+        B->print_array();
+    }
+    
+    if(B->insert(30,3)){
+        cout << "Insert Successfull"<<endl;
+        B->print_array();
+    }
+    
+    delete B;
+
+    return 0;
+}
+

@@ -1,0 +1,38 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: ashu
+ *
+ * Created on July 6, 2018, 2:06 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include "Queue.h"
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    
+    Queue q(3);
+    q.enQueue(1);
+    q.enQueue(2);
+    q.print_Q();
+    q.deQueue();
+    q.deQueue();
+    q.enQueue(1);
+    q.enQueue(2);
+    q.print_Q();
+            
+   
+    return 0;
+}
+

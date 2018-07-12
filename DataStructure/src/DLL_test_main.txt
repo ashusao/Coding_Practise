@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: ashu
+ *
+ * Created on July 6, 2018, 2:06 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include "DoublyLinkedList.h"
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    
+    DoublyLinkedList DLL;
+    DLL.insertAtHead(10);
+    DLL.insertAtHead(5);
+    DLL.printDLL();
+    DLL.insertAtTail(15);
+    DLL.printDLL();
+    DLL.insertAtPos(3,12);
+    DLL.printDLL();
+    DLL.remove(4);
+    DLL.printDLL();
+    return 0;
+}
+
+

@@ -1,0 +1,42 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: ashu
+ *
+ * Created on July 6, 2018, 2:06 PM
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include "Stack.h"
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    
+    Stack s(3);
+    s.push(1);
+    s.print_stack();
+    s.pop();
+    s.print_stack();
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    s.push(4);
+    s.print_stack();
+    cout<<s.peek()<<endl;
+            
+
+
+   
+    return 0;
+}
+
+
