@@ -39,7 +39,8 @@ void CircularQ::printQ(){
 		return;
 	}
 
-	for(int i= front; i!=rear; i = (i+1)%capacity){
+	// print until last element
+	for(int i = front; i!=rear; i = (i+1)%capacity){
 		cout<< Data[i] << "->";
 	}
 
@@ -63,6 +64,7 @@ void CircularQ::enQueue(int val){
 	Data[rear] = val;
 
 }
+
 
 void CircularQ::deQueue(){
 

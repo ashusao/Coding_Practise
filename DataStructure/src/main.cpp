@@ -13,7 +13,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "CircularQ.h"
+#include "SinglyLinkedList.h"
 using namespace std;
 
 /*
@@ -21,23 +21,17 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-	CircularQ q(2);
-    q.enQueue(1);
-    q.enQueue(2);
-    q.printQ();
-    q.deQueue();
-    q.printQ();
-    q.enQueue(3);
-    q.printQ();
-    q.deQueue();
-    q.deQueue();
-    q.deQueue();
-    q.printQ();
-    q.enQueue(3);
-    q.printQ();
+    SinglyLinkedList* LL = new SinglyLinkedList();
+    LL->insertAtFirst(8);
+    LL->print_LL();
+    LL->insertAtFirst(3);
+    LL->insertAtTail(34);
+    LL->print_LL();
+    LL->insertAtPos(3, 45);
+    LL->print_LL();
+    LL->reverseIterative();
+    LL->print_LL();
 
-            
-   
     return 0;
 }
 

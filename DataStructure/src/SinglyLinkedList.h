@@ -29,6 +29,8 @@ public:
     void insertAtTail(int val);
     void insertAtPos(int pos, int val);
     void remove(int val);
+    void reverseIterative();
+    void reverseRecursive();
     
 private:
     
