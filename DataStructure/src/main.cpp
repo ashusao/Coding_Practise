@@ -21,16 +21,13 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-    SinglyLinkedList* LL = new SinglyLinkedList();
-    LL->insertAtFirst(8);
-    LL->print_LL();
-    LL->insertAtFirst(3);
-    LL->insertAtTail(34);
-    LL->print_LL();
-    LL->insertAtPos(3, 45);
-    LL->print_LL();
-    LL->reverseIterative();
-    LL->print_LL();
+	SinglyLinkedList obj;
+//	 int param_1 = obj.get(index);
+	 obj.insertAtFirst(2);
+	 obj.insertAtTail(3);
+	 obj.insertAtPos(1,4);
+	 obj.print_LL();
+
 
     return 0;
 }
