@@ -15,13 +15,21 @@ using namespace std;
       ListNode(int x) : val(x), next(NULL) {}
   };
 
+  // intialize pre and next to NULL
+  // Loop untill head reaches null
+  // save next node
+  // point heads next to previous
+  // update previous to head
+  // update heas to next
+
   class Solution {
   public:
       ListNode* reverseList(ListNode* head) {
 
     	  ListNode* prev = NULL;
+    	  ListNode* next = NULL;
     	  while(head != NULL){
-    		  ListNode* next = head->next;
+    		  next = head->next;
     		  head->next = prev;
     		  prev = head;
     		  head = next;
