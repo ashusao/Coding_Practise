@@ -22,7 +22,7 @@
 
 using namespace std;
 
-
+/*
 int main(){
     int t;
     cin >> t;
@@ -34,3 +34,4 @@ int main(){
     }
     return 0;
 }
+*/
